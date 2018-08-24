@@ -117,6 +117,8 @@ def norm_score(pred):
 
     for _, k in pred.items():
         for _, v in k.items():
+            if len(v) == 0:
+                continue
             _min = np.min(v[:, -1])
             _max = np.max(v[:, -1])
             max_score = max(_max, max_score)
@@ -125,6 +127,8 @@ def norm_score(pred):
     diff = max_score - min_score
     for _, k in pred.items():
         for _, v in k.items():
+            if len(v) == 0:
+                continue
             v[:, -1] = (v[:, -1] - min_score)/diff
 
 
