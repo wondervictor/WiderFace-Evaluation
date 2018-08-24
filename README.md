@@ -13,7 +13,7 @@ python3 setup.py build_ext --inplace
 
 ##### evaluating
 
-**GroungTruth: ** `wider_face_val.mat`, `wider_easy_val.mat`, `wider_medium_val.mat`,`wider_hard_val.mat`
+**GroungTruth:** `wider_face_val.mat`, `wider_easy_val.mat`, `wider_medium_val.mat`,`wider_hard_val.mat`
 
 ````
 python3 evaluation.py -p <your prediction dir> -g <groud truth dir>
