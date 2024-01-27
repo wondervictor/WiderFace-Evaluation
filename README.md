@@ -7,8 +7,10 @@ Python Evaluation Code for [Wider Face Dataset](http://mmlab.ie.cuhk.edu.hk/proj
 
 ##### before evaluating ....
 
+installation from github
+
 ````
-python3 setup.py build_ext --inplace
+pip install git+https://github.com/msinamsina/WiderFace-Evaluation.git
 ````
 
 ##### evaluating
