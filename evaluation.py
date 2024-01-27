@@ -1,18 +1,10 @@
-"""
-WiderFace evaluation code
-author: wondervictor
-mail: tianhengcheng@gmail.com
-copyright@wondervictor
-"""
-
 import os
 import tqdm
 import pickle
 import argparse
 import numpy as np
 from scipy.io import loadmat
-from bbox import bbox_overlaps
-from IPython import embed
+from widerface_eval.bbox import bbox_overlaps
 
 
 def get_gt_boxes(gt_dir):
