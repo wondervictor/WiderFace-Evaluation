@@ -8,9 +8,8 @@
 cimport cython
 import numpy as np
 cimport numpy as np
-
-DTYPE = float
-ctypedef np.float_t DTYPE_t
+ctypedef float DTYPE_t
+DTYPE = np.float32
 
 def bbox_overlaps(
         np.ndarray[DTYPE_t, ndim=2] boxes,
