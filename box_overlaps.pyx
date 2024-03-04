@@ -9,7 +9,7 @@ cimport cython
 import numpy as np
 cimport numpy as np
 
-DTYPE = np.float
+DTYPE = np.float64
 ctypedef np.float_t DTYPE_t
 
 def bbox_overlaps(
